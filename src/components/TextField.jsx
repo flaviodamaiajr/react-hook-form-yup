@@ -2,9 +2,6 @@ import React from 'react';
 import { Controller } from 'react-hook-form';
 
 export const TextField = ({ label, name, placeholder, error, onChange, onBlur, value, control, ...rest }) => {
-
-console.log(error);
-
     return (
         <div className={`form-group pt-2 ${error ? 'has-error' : ''}`}>
             <label>{label}</label>
